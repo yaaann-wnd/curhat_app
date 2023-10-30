@@ -15,7 +15,7 @@ class ListCurhat extends Component
 
     public function render()
     {
-        $curhat = Curhat::all();
+        $curhat = Curhat::latest()->get();
         return view('livewire.list-curhat', ['curhat' => $curhat]);
     }
 }

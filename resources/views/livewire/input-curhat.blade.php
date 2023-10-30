@@ -1,6 +1,5 @@
-<div class="z-50 w-full fixed bottom-0 left-0 p-4 border-t border-gray-300 dark:border-none bg-gray-100 dark:bg-gray-800"
-    style="max-height: 15%;">
-    <form wire:submit.prevent='proses'>
+<div class="z-50 w-full fixed bottom-0 left-0 p-4 border-t border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 min-h-[7%]">
+    {{-- <form wire:submit.prevent='proses'>
         <div class="h-full w-full grid gap-1" style="grid-template-columns: 5fr 1fr">
             <div class="input-wrapper h-full">
                 <textarea wire:model='isi' name="curhat" id="curhat"
@@ -15,5 +14,5 @@
                 </svg>
             </button>
         </div>
-    </form>
+    </form> --}}
 </div>
