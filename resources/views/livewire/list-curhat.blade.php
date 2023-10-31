@@ -1,4 +1,4 @@
-<div class="w-full pe-2 relative h-full overflow-y-auto">
+<div class="w-full relative h-full overflow-y-auto">
     @forelse ($curhat as $item)
         <div
             class="w-full p-4 bg-gray-100 outline-gray-300 outline-1 outline-offset-[-1px] outline dark:bg-gray-800 dark:outline-gray-700 rounded flex flex-col gap-4 mb-3">

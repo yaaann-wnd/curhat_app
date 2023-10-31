@@ -45,3 +45,13 @@ body {
 *::-webkit-scrollbar-thumb:active {
     background-color: #6366f1;
 }
+
+@media (max-width: 500px) {
+    * {
+        scrollbar-width: none;
+    }
+
+    *::-webkit-scrollbar {
+        display: none;
+    }
+}
