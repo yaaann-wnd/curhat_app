@@ -55,3 +55,14 @@ body {
         display: none;
     }
 }
+#tambah-wrapper {
+    transition: 500ms ease;
+}
+
+#tambah-wrapper[data-status="inactive"] {
+    clip-path: inset(100% 0% 0% 0%);
+}
+
+#tambah-wrapper[data-status="active"] {
+    clip-path: inset(0%);
+}

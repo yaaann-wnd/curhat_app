@@ -1,5 +1,10 @@
 const themeToggleDarkIcon = document.getElementById("dark-icon");
 const themeToggleLightIcon = document.getElementById("light-icon");
+const themeToggleBtn = document.getElementById("theme-toggle");
+
+const tombol_tambah = document.getElementById("tombol-tambah");
+const tombol_tutup = document.getElementById("tombol-tutup-tambah-wrapper");
+const tambah_wrapper = document.getElementById("tambah-wrapper");
 
 // Change the icons inside the button based on previous settings
 if (
@@ -12,7 +17,6 @@ if (
     themeToggleDarkIcon.classList.remove("hidden");
 }
 
-const themeToggleBtn = document.getElementById("theme-toggle");
 
 themeToggleBtn.addEventListener("click", function () {
     // toggle icons inside button
@@ -39,4 +43,12 @@ themeToggleBtn.addEventListener("click", function () {
             localStorage.setItem("color-theme", "dark");
         }
     }
+});
+
+tombol_tambah.addEventListener("click", () => {
+    tambah_wrapper.dataset.status = "active";
+});
+
+tombol_tutup.addEventListener("click", () => {
+    tambah_wrapper.dataset.status = "inactive";
 });
